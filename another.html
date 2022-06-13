@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background:gray;
+            width:500px;
+            display: flex;
+            justify-content:center;
+            
+        }
+        .main .left{
+            padding: 50px 0;
+            background:red;
+            font-size:20px;
+            margin:20px;
+        }
+        .main .right{
+            padding:50px;
+            background:green;
+            font-size:20px;
+            margin:20px;
+        }
+        .line{
+            height:5px;
+            background:crimson;
+            width:100%;
+            position:relative;
+        }        
+        .line::before{
+            content:"Samiran";
+            height:100%;
+            left:0;
+            top:0;
+            position:absolute;
+            background:green;
+            width:50%;
+        }
+        .line::after{
+            content:"ruman";
+            height:100%;
+            left:0;
+            top:0;
+            margin:100px;
+            position:absolute;
+            background:green;
+            width:50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">This is left side</div>
+        <div class="right">This is right side</div>
+    </div>
+    <br/>
+    <br/>
+    <div class="line html"></div>
+    <br>
+    <div class="line css"></div>
+    <br/>
+    <div class="line js"></div>
+    <br/>
+    <div class="line php"></div>
+</body>
+</html>
